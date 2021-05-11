@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 
   # view single task details
   get '/tasks/:id', to: 'tasks#show', as: :task
+
+  # edit a single task
+  get '/tasks/:id/edit', to: 'tasks#edit', as: :edit_task
+  patch '/tasks/:id', to: 'tasks#update'
 end
