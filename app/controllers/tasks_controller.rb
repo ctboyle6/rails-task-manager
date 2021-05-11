@@ -22,6 +22,7 @@ class TasksController < ApplicationController
 
   def update
     @task.update(task_params)
+    # raise
     redirect_to task_path(@task)
   end
 
